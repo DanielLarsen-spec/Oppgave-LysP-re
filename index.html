@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lyspæren</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+<h1 class="overSkrift">Slå på lyset!</h1>
+
+    <img id="bulb" onclick="minDiv()" src="LyspæreAv.png">
+
+
+    
+
+
+
+
+<script>
+let bilde1 = 'LyspæreAv.png'
+let bilde2 = 'LyspærePå.png'
+const img = document.getElementById('bulb')
+let isOn = false
+function minDiv(){
+    console.log(img)
+
+    if(isOn == true){
+       console.log('den gikk inn i ifen')
+        off()
+    }else{
+        on()
+    }
+        
+}
+    function off(){
+       console.log('off')
+        img.src = 'LyspæreAv.png'
+        isOn = false
+        console.log(img.src)
+
+    }
+
+
+    function on(){
+        console.log('on')
+        isOn = true
+        img.src = 'LyspærePå.png'
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</script>
+</body>
+</html>
